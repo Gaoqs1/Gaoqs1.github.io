@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日照技师教育发展集团</title>
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: '微软雅黑', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 顶部横幅 */
+        .header {
+            background: linear-gradient(rgba(0, 75, 135, 0.8), rgba(0, 75, 135, 0.9)),
+                        url('替换为横幅图片路径') center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+        }
+
+        /* 图片占位符样式 */
+        .img-placeholder {
+            height: 300px;
+            background: #e9ecef;
+            border-radius: 10px;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            border: 2px dashed #adb5bd;
+        }
+
+        /* 公司卡片 */
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .company-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .company-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 搜索链接样式 */
+        .search-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .search-link i {
+            margin-left: 8px;
+        }
+
+        /* 关键数据突出 */
+        .highlight {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header {
+                padding: 50px 15px;
+            }
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========= 顶部横幅 ========= -->
+    <!-- 替换下方div内容为实际横幅图片 -->
+    <header class="header">
+        <div class="img-placeholder">
+            集团形象横幅图片位（推荐尺寸：1920x600像素）
+        </div>
+        <h1>日照技师教育发展集团有限公司</h1>
+        <p>注册资本：<span class="highlight">2000万元</span> | 成立日期：2024年1月26日</p >
+    </header>
+
+    <div class="container">
+        <!-- ========= 集团简介 ========= -->
+        <section>
+            <h2>集团简介</h2>
+            <p>深入贯彻国家职业教育改革政策，落实市委市政府决策部署，日照市技师学院投资组建的综合性职教平台。集团以<span class="highlight">产教深度融合</span>为核心，构建"政校企"协同创新机制，致力于培养新时代高技能人才。</p >
+            
+            <!-- 添加简介图片位置 -->
+            <div class="img-placeholder">
+                产教融合成果展示图位（推荐尺寸：1200x400像素）
+            </div>
+        </section>
+
+        <!-- ========= 子公司列表 ========= -->
+        <section>
+            <h2>六大核心业务板块</h2>
+            <div class="company-grid">
+                <!-- 每个公司卡片模板开始 -->
+                <div class="company-card">
+                    <h3>投资运营公司</h3>
+                    <ul>
+                        <li>资本运作与投资管理</li>
+                        <li>企业资产优化评估</li>
+                        <li>项目可行性研究</li>
+                    </ul>
+                    <!-- 联网搜索链接 -->
+                    <a href=" " 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <!-- 添加公司图片位置 -->
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        公司实景图位（推荐尺寸：800x500像素）
+                    </div>
+                </div>
+                <!-- 公司卡片模板结束 -->
+
+                <!-- 实训酒店公司 -->
+                <div class="company-card">
+                    <h3>实训酒店公司</h3>
+                    <ul>
+                        <li>酒店运营标准化管理</li>
+                        <li>餐饮服务实训基地</li>
+                        <li>会议会展专业服务</li>
+                    </ul>
+                    <a href="https://www.baidu.com/s?wd=日照技师实训酒店有限公司" 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        实训基地图片位
+                    </div>
+                </div>
+
+                <!-- 创业服务公司 -->
+                <div class="company-card">
+                    <h3>创业服务公司</h3>
+                    <ul>
+                        <li>创新创业孵化平台</li>
+                        <li>电商运营支持</li>
+                        <li>技术成果转化</li>
+                    </ul>
+                    <a href="https://www.baidu.com/s?wd=日照技师创业服务有限公司" 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        创业园区图片位
+                    </div>
+                </div>
+
+                <!-- 技术服务公司 -->
+                <div class="company-card">
+                    <h3>技术服务公司</h3>
+                    <ul>
+                        <li>技术开发与咨询</li>
+                        <li>工艺优化服务</li>
+                        <li>产学研合作对接</li>
+                    </ul>
+                    <a href="https://www.baidu.com/s?wd=日照技师技术服务有限公司" 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        技术研发图片位
+                    </div>
+                </div>
+
+                <!-- 职业技能培训 -->
+                <div class="company-card">
+                    <h3>职业技能培训</h3>
+                    <ul>
+                        <li>专业资质认证培训</li>
+                        <li>技能等级考核评定</li>
+                        <li>就业创业指导服务</li>
+                    </ul>
+                    <a href="https://www.baidu.com/s?wd=日照技师职业技能培训学校有限公司" 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        培训场景图片位
+                    </div>
+                </div>
+
+                <!-- 工程管理公司 -->
+                <div class="company-card">
+                    <h3>工程管理公司</h3>
+                    <ul>
+                        <li>全过程工程管理</li>
+                        <li>市政设施维护</li>
+                        <li>工程造价咨询</li>
+                    </ul>
+                    <a href="https://www.baidu.com/s?wd=日照技师工程管理有限公司" 
+                       class="search-link"
+                       target="_blank">
+                       查看企业信息 <i class="fas fa-external-link-alt"></i>
+                    </a >
+                    <div class="img-placeholder" style="height: 200px; margin-top:15px">
+                        工程项目图片位
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
